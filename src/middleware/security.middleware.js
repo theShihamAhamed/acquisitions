@@ -3,6 +3,8 @@ import logger from '#config/logger.js';
 import { slidingWindow } from '@arcjet/node';
 
 const securityMiddleware = async (req, res, next) => {
+  const MODE = process.env.NODE_ENV === 'production' ? 'LIVE' : 'DRY_RUN';
+
   try {
     const role = req.user?.role || 'guest';
     let limit;
@@ -26,7 +28,7 @@ const securityMiddleware = async (req, res, next) => {
 
     const client = aj.withRule(
       slidingWindow({
-        mode: 'LIVE',
+        mode: MODE,
         interval: '1m',
         max: limit,
         name: `${role}-rate-limit`,

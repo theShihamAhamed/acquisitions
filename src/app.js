@@ -6,6 +6,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from '#routes/auht.routes.js';
 import securityMiddleware from '#middleware/security.middleware.js';
+import usersRoutes from '#routes/users.routes.js';
 
 const app = express();
 
@@ -35,9 +36,14 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-  res.status(200).json({ message: 'Aquisition API is running!' });
+  res.status(200).json({ message: 'Acquisitions API is running!' });
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/users', usersRoutes);
+
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
 
 export default app;
