@@ -36,3 +36,5 @@
 {"level":"error","message":"Signup error Error: User already exists","service":"acquisition-api"}
 {"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisition-api"}
 {"level":"error","message":"Signin error Error: Invalid password","service":"acquisition-api"}
+{"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisition-api"}
+{"level":"error","message":"Signin error Error: Invalid password","service":"acquisition-api"}

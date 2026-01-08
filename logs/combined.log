@@ -112,3 +112,13 @@
 {"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisition-api"}
 {"level":"error","message":"Signin error Error: Invalid password","service":"acquisition-api"}
 {"level":"info","message":"::1 - - [08/Jan/2026:05:59:29 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisition-api"}
+{"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisition-api"}
+{"level":"error","message":"Signin error Error: Invalid password","service":"acquisition-api"}
+{"level":"info","message":"::1 - - [08/Jan/2026:08:28:07 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisition-api"}
+{"level":"info","message":"User shiham@gmail.com authenticated successfully","service":"acquisition-api"}
+{"level":"info","message":"User signed in successfully: shiham@gmail.com","service":"acquisition-api"}
+{"level":"info","message":"::1 - - [08/Jan/2026:08:28:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 121 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisition-api"}
+{"level":"info","message":"::1 - - [08/Jan/2026:08:29:26 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 500 95 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisition-api"}
+{"level":"info","message":"::1 - - [08/Jan/2026:08:32:31 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 500 95 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisition-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-in","service":"acquisition-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [08/Jan/2026:08:34:42 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisition-api"}
